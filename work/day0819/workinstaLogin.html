@@ -14,7 +14,7 @@
         }
 
         .insta{
-            border: 1px solid; color: gray;
+            border: 1px solid #dbdbdb; color: gray;
             margin-top: 50;
             text-align: center;
             margin: auto;
@@ -23,7 +23,7 @@
         }
         
         .insta2{
-            border: 1px solid; color: gray;
+            border: 1px solid #dbdbdb; color: gray;
             text-align: center;
             margin: auto;
             margin-top: 20px;
@@ -33,6 +33,13 @@
 
         .main{ margin-bottom: 5px;    }
 
+        input {
+            background-color: #fafafa;
+            border-width: 1px;
+            border-color: #dbdbdb;
+            border-style: ridge;
+            border-radius: 5px;
+        }
         input[type=text]{
             padding-left: 10px;
             width: 300px;
@@ -49,17 +56,20 @@
         input[type=button]{
             color: white;
             cursor: pointer;
-            background-color: cadetblue;
             border-radius: 10px;
             padding: 5px 30px;
+            border: 0;
+            font-weight: bold;
+            height: 40px;
+            font-size: 12pt;
         }
 
         a:hover{ font-weight: bold;     }
         
-        span{
+        #contactSync{
             font-size: 9pt;
-            font-weight: lighter;
-            color: gray;          
+            color: #808280;
+            line-height: 1.3;
         }
 
         .devider {
@@ -83,14 +93,23 @@
             width: 100px;
             font-weight: bold;
         }
+
+        #facebook {
+            background-color: #515ffd;
+        }
+
+        #register {
+            background-color: #858ffe;
+            margin-bottom: 50px;
+        }
     </style>
 </head>
 
 <body>
     <div class="insta">        
-        <a href="#" target="_blank"><img src="images/instagram.png" alt=""></a><br>
-        <span> 친구들의 사진,동영상을 보려면 가입하세요</span><br>
-        <a href="#"target="_blank"><input type="button" value="Facebook으로 로그인" style="width: 300px;"></a>
+        <a href="#" target="_blank"><img src="images/instagram.png" alt="" width="200" style="margin-top: 50px;"></a><br>
+        <h3 style="width: 300;"> 친구들의 사진과 동영상을 보려면 가입하<br>세요</h3><br>
+        <a href="#"target="_blank"><input id="facebook" type="button" value="Facebook으로 로그인" style="width: 300px;"></a>
         <div class="devider">
         <div class="line"></div><div class="or">또는</div><div class="line"></div>
         </div>
@@ -107,10 +126,11 @@
         <div class="main">
             <input type="text" placeholder="사용자 이름"> <br>
         </div>
-        <span>
+        <div id="contactSync">
         저희 서비스를 이용하는 사람이 회원님의 연락처 정보<br>
-        를 Instagram에 업로드했을 수도 있습니다. </span><a href="" style="text-decoration: none; font-size: 9pt;">더 알아보<br>기</a><br>
-        <a href="#"target="_blank"><input type="button" value="가입" style="width: 300px;"></a>
+        를 Instagram에 업로드했을 수도 있습니다.
+        <a href="" style="text-decoration: none; font-size: 9pt; color: blue;">더 알아보<br>기</a> </div><br>
+        <a href="#"target="_blank"><input id="register" type="button" value="가입" style="width: 300px;"></a>
         
 
         
