@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>02table.html</title>
     <style>
-        *{
+        * {
             font-size: 20pt;
+        }
+
+        table, tr, td {
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+        
+        .mytitle {
+            background-color: pink;
         }
     </style>
 </head>
@@ -46,11 +55,11 @@
     <p></p>
 
     table연습2
-    <table width="800" border="1" cellspacing="0" cellpadding="7">
+    <table width="800">
         <tr>
             <th colspan="4"> 2025년 서면증권 관심종목 </th>
         </tr>
-        <tr bgcolor="orange">
+        <tr class="mytitle">
             <td> &nbsp;거래종목 </td> <!-- table heaader 제목 굵게 중앙맞춤 -->
             <td> &nbsp;상한가 </td>
             <td> &nbsp;거래날자 </td>
