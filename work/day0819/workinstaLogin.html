@@ -61,6 +61,28 @@
             font-weight: lighter;
             color: gray;          
         }
+
+        .devider {
+            display: flex;
+            gap: 1px;
+            align-items: center;
+            margin: 15px;
+            width: 350px;
+            padding-left: 25px;
+        }
+
+        .line {
+            width: 100%;           /* 선의 길이 */
+            height: 1px;           /* 두께 */
+            background-color: #dbdbdb; /* 선 색상 */
+            margin: 15px ;        /*상하 여백*/
+            border: none;          /* 보더 제거 */
+        }
+
+        .or {
+            width: 100px;
+            font-weight: bold;
+        }
     </style>
 </head>
 
@@ -68,10 +90,9 @@
     <div class="insta">        
         <a href="#" target="_blank"><img src="images/instagram.png" alt=""></a><br>
         <span> 친구들의 사진,동영상을 보려면 가입하세요</span><br>
-        <a href="#"target="_blank"><input type="button" value="Facebook으로 로그인"></a>
-        <hr>
-        <div>
-        <div class="line">line</div><div>또는</div><div class="line">line</div>
+        <a href="#"target="_blank"><input type="button" value="Facebook으로 로그인" style="width: 300px;"></a>
+        <div class="devider">
+        <div class="line"></div><div class="or">또는</div><div class="line"></div>
         </div>
 
         <div class="main">
@@ -89,7 +110,7 @@
         <span>
         저희 서비스를 이용하는 사람이 회원님의 연락처 정보<br>
         를 Instagram에 업로드했을 수도 있습니다. </span><a href="" style="text-decoration: none; font-size: 9pt;">더 알아보<br>기</a><br>
-        <a href="#"target="_blank"><input type="button" value="가입"></a>
+        <a href="#"target="_blank"><input type="button" value="가입" style="width: 300px;"></a>
         
 
         
