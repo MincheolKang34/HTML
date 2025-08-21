@@ -1,12 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>index</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04apple.html</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .wrap_myproduct {
+            width: 600px;
+            margin: 30px auto;
+            border: solid 2px;
+            border-color: violet;
+        }
+        
+        .container_myproduct {
+            border: solid 2px;
+            text-align: center;
+            border-color: tomato;
+        }
+
+        .a_myproduct {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover.a_myproduct{
+            color:brown; 
+            text-decoration: underline;
+        }
+
+        h1 {
+            background-color: black;
+            color: white;
+            font-size: 1em;
+            text-align: left;
+            padding: 7px;
+            font-weight: 400;
+        }
+    </style>
 </head>
 <body>
-	<!-- header --> 
+  <!-- header --> 
 	<header>
 		<div class="container">
 			<div class="logo">
@@ -72,70 +106,33 @@
 	</nav>
 	<!-- //nav -->
 
-	<!-- section -->
-	<section id="section1">
-		<div class="container">
-			<div class="leftBox">
-				<div class="graph1">
-					<canvas id="graph1"></canvas>
-				</div>
-				<div class="graph2">
-					<canvas id="graph2"></canvas>
-				</div>
-			</div>
-			<div class="rightBox">
-				<div class="imgBox">
-					<img src="./image/a4.png" alt="">
-				</div>
-				<div class="table">
-					<table>
-						<caption>미세먼지 농도</caption>
-						<thead>
-							<tr>
-								<th colspan="2">예보구간</th>
-								<th class="blue">좋음</th>
-								<th class="green">보통</th>
-								<th class="yellow">약간나쁨</th>
-								<th class="orange">나쁨</th>
-								<th class="red" colspan="2">매우나쁨</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td colspan="2">예측 농도</td>
-								<td>0~30</td>
-								<td>31~80</td>
-								<td>81~120</td>
-								<td>121~200</td>
-								<td>201~300</td>
-								<td>301 ~</td>
-							</tr>
-							<tr>
-								<td rowspan="2">행동 요령</td>
-								<td>노약자</td>
-								<td></td>
-								<td></td>
-								<td>장시간 실외 활동 가급적 자제</td>
-								<td>무리한 실외활동 자제요청 (특히 호흡기, 심질환자, 노약자)</td>
-								<td>실외활동 제한</td>
-								<td>실내생활</td>
-							</tr>
-							<tr>
-								<td>일반</td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td>장시간 무리한 실외활동 자제</td>
-								<td>실외활동 자제</td>
-								<td>실외활동 자제</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-		</div>
-	</section>
-	<div class="clear"></div>
+  <!-- section -->
+    <div class="wrap_myproduct">
+        <img src="image/top.jpg" width="600px">
+        <div class="container_myproduct">
+            <h1>확인 사항</h1>
+            <a class="a_myproduct" href="#"> <h2>주문 및 배송</h2></a>
+            <p>
+                오후 2시 이전 주문 건은 당일 발송합니다 <br>
+                2시 이후 주문 건은 다음날 발송합니다.(주말 제외)
+            </p>
+            <hr>
+
+            <a class="a_myproduct" href="#"> <h2>교환 및 환불</h2></a>
+            <p>
+                불만족시 100%환불해 드립니다 <br>
+                고객센터로 전화주세요
+            </p>
+            <hr>
+
+            <a class="a_myproduct" href="#"> <h2>고객센터</h2></a>
+            <p>
+                1588-1200 <br>
+                상담시간:오전9시 ~ 오후6시(토/일,공휴일 휴무)
+            </p>
+            <hr>
+        </div>
+    </div>
 	<!-- //section -->
 
 	<!-- footer -->
@@ -160,12 +157,3 @@
 	<script src="app.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-

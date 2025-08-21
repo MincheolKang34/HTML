@@ -614,7 +614,7 @@ section{
 
 /* #section9 */
 #section9{
-    height: 600px;
+    height: 100%;
 }
 #section9 > .container{
     width: 40%;

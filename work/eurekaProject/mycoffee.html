@@ -4,6 +4,12 @@
 <meta charset="UTF-8">
 <title></title>
 <link rel="stylesheet" href="css/style.css">
+    <style>
+        .price {color: #ff0000;}
+		.coffiee_container {
+			all: initial;
+		}
+    </style>
 </head> 
 <body> 
 	<!-- header ------------------------------------------ -->
@@ -72,9 +78,38 @@
 	
 	<!-- section9 --------------------------------------------- -->
 	<section id="section9">
-		<div class="container">
+		<div class="container" style="border: 1px solid; width: 700px; height: 800px;">
 			
             <img src="./image/main_4.jpg" alt="">
+				<fieldset style="text-align: initial;">
+				<h1 style="color: cadetblue;"> ☕ Coffiee Price</h1>
+				<ul class="ul_mycoffiee" type="square" style="padding-left: 35px;">
+					<li style="float: none; list-style: square;"><b>아메리카노(americano)3,500원</b></li>
+						<p style="color: cadetblue;">(할인 적용시 2,500원)</p>
+					<li style="font-weight: bold;">카페라떼(cafe latte)5,500원</li>
+						<p style="color: cadetblue;">(할인 적용시 2,500원)</p>
+					<li style="font-weight: bold;">카푸치노(capucchino)6,000원</li>
+						<p style="color: cadetblue;">(할인 적용시 2,500원)</p>
+				</ul>
+
+				<hr color="cadetblue" size="3">
+
+				<h1 style="color: cadetblue;"> ☕ Coffiee Price</h1>
+				<ul class="ul_mycoffiee" type="square">
+					<li>
+						<b>아메리카노(americano) <del class="price">3,500원</del></b><br>
+						<p style="color: cadetblue;">(할인 적용시 2,500원)</p><br>
+					</li>
+					<li style="font-weight: bold;">
+						카페라떼(cafe latte) <del class="price">5,500원</del><br>
+						<p style="color: cadetblue;">(할인 적용시 2,500원)</p><br>
+					</li>
+					<li style="font-weight: bold;">
+						카푸치노(capucchino) <del class="price">6,000원</del><br>
+						<p style="color: cadetblue;">(할인 적용시 2,500원)</p>
+					</li>
+				</ul>
+				</fieldset>
 		</div>
 	</section>
 	<div class="clear"></div>
