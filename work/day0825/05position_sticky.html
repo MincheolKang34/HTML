@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05position_sticky.html</title>
+    <style>
+        .container {
+            width: 300px;
+            height: 312px;
+            border: 1px solid tomato;
+            position: relative; /* 절대위치에서 부모 역할 */
+        }
+
+        .box {
+            width: 120px;
+            height: 100px;
+            background-color: lightgray;
+            border: 1px solid black;
+            margin-bottom: 3px;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .scorll-container {
+            height: 250px;
+            border: 2px solid darkviolet;
+            overflow-y: auto;
+        }
+        
+        .fixed_box {
+            background-color: #abcdef;
+            position: fixed;
+            bottom: 70px;
+            right: 50px;
+        }
+        
+        .sticky_box {
+            background-color: goldenrod;
+            position: sticky;
+            top: 0;
+            /* bottom: 20px; */
+            /* right: 50px; */
+        }
+    </style>
+</head>
+<body>
+    <h2> 05position_sticky.html문서 </h2>
+    <div class="scorll-container">
+        <div class="box">첫번째 요소</div>
+        <div class="box sticky_box">두번째 요소</div>
+        <!-- sticky = relative + fixed 결합 -->
+        <div class="box">세번째 요소</div>
+        <div class="box">네번째 요소</div>
+        <div class="box">다섯번째 요소</div>
+    </div>
+</body>
+</html>

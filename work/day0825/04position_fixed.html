@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04position_fixed.html</title>
+    <style>
+        .container {
+            width: 300px;
+            height: 312px;
+            border: 1px solid tomato;
+            position: relative; /* 절대위치에서 부모 역할 */
+        }
+
+        .box {
+            width: 120px;
+            height: 100px;
+            background-color: lightgray;
+            border: 1px solid black;
+            margin-bottom: 3px;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .absolute_box {
+            background-color: greenyellow;
+            position: absolute;
+            top: 80px;
+            /* left: 180px; */
+            right: 0; /* 권장 */
+        }
+        
+        .scorll-container {
+            height: 150px;
+            border: 2px solid darkviolet;
+            overflow-y: auto;
+        }
+        
+        .fixed_box {
+            background-color: #abcdef;
+            position: fixed;
+            bottom: 70px;
+            right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h2> 04position_fixed.html문서 </h2>
+    <div class="scorll-container">
+        <div class="box">첫번째 요소</div>
+        <div class="box fixed_box">두번째 요소</div>
+            <!-- fixed 속성도 relative 설정 권장-->
+            <!-- fixed 속성도 top/left/right/bottom 조절 -->
+        <div class="box">세번째 요소</div>
+    </div>
+</body>
+</html>
