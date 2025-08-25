@@ -622,6 +622,17 @@ section{
     border: 0px solid #cbcbcb;
     text-align: center;
 }
+#section9 > .container ul li {
+    float: none;
+    list-style: square;
+}
+#section9 > .container ul{
+    padding-left: 35px;
+    text-align: initial;
+}
+#section9> .container h1 {
+    text-align: initial;
+}
 /* //#section9 */
 
 /* footer */
