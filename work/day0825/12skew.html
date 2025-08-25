@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12skew.html</title>
+    <style>
+        .origin {
+            border: 1px solid darkorange;
+            width: 210px;
+            height: 200px;
+            margin-bottom: 5px;
+        }
+
+        .skew1:hover {
+            transform: skew(-20deg, -20deg);
+        }
+
+        .skew2:hover {
+            transform: skewX(-24deg);
+        }
+
+        .skew3:hover {
+            transform: skewY(55deg);
+        }
+    </style>
+</head>
+<body>
+    <h2>12skew.html</h2>
+    <div class="origin">
+        <div class="skew1"> <img src="./images/fruit.jpg"></div>
+    </div>
+    
+    <div class="origin">
+        <div class="skew2"> <img src="./images/fruit.jpg"></div>
+    </div>
+    
+    <div class="origin">
+        <div class="skew3"> <img src="./images/fruit.jpg"></div>
+    </div>
+</body>
+</html>
