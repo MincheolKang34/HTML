@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>12positiontransition.html</title>
+    <title>11float.html</title>
     <style>
         .container {
             border: 1px solid lightgray;
@@ -17,7 +17,7 @@
 
         .prod-list .caption {
             position: absolute;
-            top: 200px;
+            /* top: 200px; */
             width: 350px;
             height: 200px;
             padding-top: 20px;
@@ -45,11 +45,45 @@
             text-align: center;
             color: whitesmoke;
         }
-    </style>
+
+        .myfloat {
+            font-size: 12pt;
+            box-shadow: 
+            0px 10px gray,
+            0px -10px gray;
+            overflow: auto;
+        }
+
+        .myfloat h1 {
+            font-size: 34pt;
+            float: left;
+            margin: 0px 10px 0px 0px;
+            background-color: lightgray;
+        }
+        
+        .myfloat div {
+            font-size: 12pt;
+            text-align: justify;
+        }
+        </style>
 </head>
 <body>
-    <b>12positiontransition.html</b><br>
+    <div class="myfloat">
+        <h1>금 연 <br> 일 지</h1>
+        <div>
+            개인적인 기호를 법적으로만 관리할 수도 없는 것이고...
+            개인적인 기호를 법적으로만 관리할 수도 없는 것이고...
+            개인적인 기호를 법적으로만 관리할 수도 없는 것이고...
+            개인적인 기호를 법적으로만 관리할 수도 없는 것이고...
+            개인적인 기호를 법적으로만 관리할 수도 없는 것이고...
+            개인적인 기호를 법적으로만 관리할 수도 없는 것이고...
+            개인적인 기호를 법적으로만 관리할 수도 없는 것이고...
+            개인적인 기호를 법적으로만 관리할 수도 없는 것이고...
+        </div>
+    </div>
+    <p style="margin-bottom: 50px;"></p>
 
+    <b>11float.html</b><br>
     <div class="container">
         <ul class="prod-list">
             <li>
@@ -86,5 +120,6 @@
             </li>
         </ul>
     </div>
+
 </body>
 </html>
