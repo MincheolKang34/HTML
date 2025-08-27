@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index.html</title>
+    <style>
+        div {
+            border: 1px solid;
+        }
+        .header1 {
+            text-align: right;
+            padding: 10px;
+            border-top: 1px solid lightgray;
+            border-bottom: 1px solid lightgray;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        a {
+            text-decoration: none;
+        }
+        
+        .header2 {
+            position: relative;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .orderview {
+            position: absolute;
+            left: 30px;
+        }
+
+        .orderview b {
+            color: #f56800;
+            font-size: 16pt;
+        }
+
+        .orderview > a {
+            color: black;
+        }
+
+        .logo {
+            margin-left: 30px;
+            margin-right: 20px;
+        } 
+
+        .onday {
+            position: absolute;
+            right: 30px;
+        }
+
+        .nav {
+            padding: 3px;
+            text-align: center;
+            font-size: 14pt;
+            background-color: #4C4638;
+        }
+
+        .nav ul li {
+            display: inline-block;
+            list-style: none;
+            width: 130px;
+        }
+
+        .nav .menu {
+            color: white;
+        }
+
+        .nav .menu:hover {
+            color: #f56800;
+        }
+
+        /* --------------------- header --------------------------- */
+
+        /* --------------------- main --------------------------- */
+        
+        body {
+            margin: 0px auto;
+        }
+
+        .slider {
+            margin: 10px;
+        }
+
+        .go-banner1 {
+            box-sizing: border-box;
+            background-image: url("images/main_go_bg1.png");
+            padding: 20px;
+            width: 411px;
+            height: 450px;
+            margin: 5px;
+            margin: 0 auto;
+        }
+
+        .go-little {
+            width: 670px;
+            margin: 5px;
+            margin: 0 auto;
+        }
+
+        .go-little > div {
+            box-sizing: border-box;
+            width: 322px;
+            height: 219px;
+            margin: 5px;
+            float: left;
+
+        }
+
+        .go-little p {
+            margin-bottom: 5px;
+        }
+
+        .go-banner2 {
+            background-image: url("images/main_go_bg2.png");
+            padding: 20px;
+        }
+
+        .go-banner3 {
+            background-image: url("images/main_go_bg3.png");
+            padding: 20px;
+        }
+
+        .go-banner4 {
+            background-image: url("images/main_go_bg4.png");
+            padding: 20px;
+        }
+
+        .go-banner5 {
+            background-image: url("images/main_go_bg5.png");
+            padding: 20px;
+        }
+
+        .go h2 {
+            color: #f56800;
+            font-size: 12pt;
+        }
+
+        .discrip1 {
+            font-size: 18pt;
+            color: white;
+            margin-top: -8px;
+        }
+
+        .discrip2 {
+            font-size: 18pt;
+            color: #3b3629;
+            margin-top: -8px;
+        }
+
+        .go {
+            margin: 0 auto;
+            width: fit-content;
+            position: relative;
+        }
+
+        .go > div {
+            float: left;
+        }
+        
+        .oneday {
+            background-image: url("images/oneday_bg.png");
+            background-size: cover;
+            background-position: 50% center;
+            height: 200px;
+            margin-top: 500px;
+        }
+
+        /* ------------------- main ------------------- */
+
+        /* ------------------- footer ------------------- */
+        footer {
+            margin: 0;
+            width: 100%;
+        }
+
+        .footer1 {
+            background-color: #626262;
+            padding: 10px;
+            margin: 0;
+            color: white;
+            font-weight: bold;
+        }
+
+        .footer2 div {
+            background-color: #434343;
+            padding: 10px;
+            margin: 0;
+            color: #908f8e;
+        }
+        
+        .footer2 {
+            background-color: #434343;
+            height: 120px;
+        }
+
+        .footer1 a {
+            color: white;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header1">
+            <a href="#">로그인</a> |
+            <a href="#">마이페이지</a> |
+            <a href="#">관심상품(0)</a> |
+            <a href="#">장바구니(0)</a>
+        </div>
+        <div class="header2">
+            <span class="orderview">
+                <a href="#">
+                    <img src="images/ico_shopping.png" alt="">
+                    <b>SHOPPING</b> 주문조회 바로가기
+                </a>
+            </span>
+            <span class="logo">
+            <img src="images/header_txt_logo.png" alt="">
+            </span>
+            <span class="onday">
+            <img src="images/header_txt_onday.png" alt="">
+            </span>
+        </div>
+        <div class="nav">
+            <ul style="padding: 0;">
+                <li><a class="menu" href="#">채소/과일/곡류</a></li>
+                <li><a href="#" class="menu">수산</a></li>
+                <li><a href="#" class="menu">정육/달걀</a></li>
+                <li><a href="#" class="menu">면/양념/소스</a></li>
+                <li><a href="#" class="menu">음료/주류</a></li>
+                <li><a href="#" class="menu">냉장/냉동식품</a></li>
+                <li><a href="#" class="menu">캔/통조림</a></li>
+                <li><a href="#" class="menu">가공/간편식품</a></li>
+                <li><a href="#" class="menu">생활잡화</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="slider">
+            <div style="text-align: center;">
+                <img src="images/slider_banner1.jpg" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="go">
+                <div class="go-banner1">
+                    <a href="#">
+                        <h2>생활야채</h2>
+                        <p class="discrip1">1일 1야채<br>건강한 생활습관</p>
+                        <p style="color: white;">아삭아삭 건강에도 좋은<br>야채를 1일 1야채로<br>생활에 활기를 느껴보세요!</p>
+                        <img src="images/main_go_ico.png" alt="">
+                    </a>
+                </div>
+                <div class="go-little">
+                    <div class="go-banner2">
+                        <a href="#">
+                            <h2>특별이벤트</h2>
+                            <p class="discrip2">1일 1야채<br>건강한 생활습관</p>
+                            <img src="images/main_go_ico.png" alt="">
+                        </a>
+                    </div>
+                    <div class="go-banner3">
+                        <a href="#">
+                            <h2>하루할인</h2>
+                            <p class="discrip1">1일 1야채<br>건강한 생활습관</p>
+                            <img src="images/main_go_ico.png" alt="">
+                        </a>
+                    </div>
+                    <div class="go-banner4">
+                        <a href="#">
+                            <h2>프리미엄</h2>
+                            <p class="discrip1">1일 1야채<br>건강한 생활습관</p>
+                            <img src="images/main_go_ico.png" alt="">
+                        </a>
+                    </div>
+                    <div class="go-banner5">
+                        <a href="#">
+                            <h2>인기상품</h2>
+                            <p class="discrip2">1일 1야채<br>건강한 생활습관</p>
+                            <img src="images/main_go_ico.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="oneday">
+                <a herf="#"><img src="images/oneday_txt.png" alt=""></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer1">
+            <a href="#">이용약관</a> |
+            <a href="#">이용안내</a> |
+            <a href="#">개인정보취급방침</a>
+        </div>
+        <div class="footer2">
+            <div style="float: left;">
+                <div>
+                    상호명 : 쇼핑몰   대표 : 홍길동   메일 : master@foodshop.com <br>
+                    통신판매업신고번호 : 123-456-7890   사업자등록번호 : 123-45-7890   대표번호 : 070-1234-5678 <br>
+                    팩스번호 : 051-1234-5678   개인정보관리자 : 김유신   주소 : 부산시 부산진구 서전로 123
+                </div>
+            </div>
+            <div style="float: right;">
+                <img src="images/footer_tel.png" alt="">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
